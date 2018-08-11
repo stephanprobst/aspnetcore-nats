@@ -3,7 +3,10 @@
     <Description>Adds NATS integration for ASP.NET Core</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageTags>nats;messaging;</PackageTags>
+    <PackageTags>nats;messaging;aspnetcore;</PackageTags>
+    <Version>0.1.0</Version>
+    <PackageId>Probst.AspNetCore.Nats</PackageId>
+    <PackageProjectUrl>https://github.com/stephanprobst/aspnetcore-nats</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
