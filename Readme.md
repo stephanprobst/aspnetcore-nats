@@ -17,6 +17,20 @@ In your ASP<span></span>.NET Core Startup class:
     }
 ```
 
+Inject an interface of `IJsonEncodedConnection`, `IEncodedConnection` or `IConnection` where you wan't to use `NATS` (e.g. in your Controller constructor):
+
+```csharp
+    public ValueController(IJsonEncodedConnection natsConnection)
+    {
+        _natsConnection = natsConnection;
+    }
+    
+    // Use it
+```
+
+The `IJsonEncodedConnection` is a convenience interface which abstracts a `IEncodedConnection` with built in object to bytes conversion with `Newtonsoft.Json`. The `IEncodedConnection` has also already preinitialized conversion.
+
+
 ### NATS Project
 
 [NATS Website](https://nats.io)
