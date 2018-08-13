@@ -31,6 +31,10 @@ Inject an interface of `IJsonEncodedConnection`, `IEncodedConnection` or `IConne
 The `IJsonEncodedConnection` is a convenience interface which abstracts a `IEncodedConnection` with built in object to bytes conversion with `Newtonsoft.Json`. The `IEncodedConnection` has also already preinitialized conversion.
 
 
-### NATS Project
+## NATS Project
 
 [NATS Website](https://nats.io)
+
+## Used NATS client libary
+[nats-io/csharp-nats](https://github.com/nats-io/csharp-nats)
+
