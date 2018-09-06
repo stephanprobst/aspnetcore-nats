@@ -2,6 +2,12 @@
 
 ## How to use
 
+Add nuget package
+
+```bash
+dotnet add package Probst.AspNetCore.Nats
+```
+
 In your ASP<span></span>.NET Core Startup class:
 
 ```csharp
@@ -10,6 +16,7 @@ In your ASP<span></span>.NET Core Startup class:
         services.AddNats(options =>
         {
             options.Url = "nats://nats:4222";
+            // configure other options
         });
 
         services.AddMvc()
